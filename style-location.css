@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Outfit', sans-serif;
+}
+
+.heder {
+    position: relative;
+}
+
+.home-button {
+    display: flex;
+    width: 267px;
+    height: 72px;
+    text-decoration: none;
+
+    position: absolute;
+
+}
+
+.home-text {
+    padding: 24px 32px;
+
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+
+    letter-spacing: 3.63636px;
+
+    color: #FFFFFF;
+
+    background: #151515;
+}
+
+.header-tablet_img {
+    display: none;
+}
+
+.heder-desktop_img {
+    display: none;
+}
+
+
+.home-button:hover .home-text {
+    background: #D5966C;
+    transition: all 1s;
+
+}
+
+.home-button:hover .arrow-left {
+    background: #151515;
+    transition: all 1s;
+
+}
+
+.home-text:hover .arrow-left {
+    background: #D5966C;
+    transition: all 1s;
+
+}
+
+.arrow-left {
+    padding: 24px;
+    background: #D5966C;
+}
+
+
+/******************  main *************************/
+
+.main {
+    padding: 48px 16px 56px;
+
+    background: #151515;
+}
+
+.main-title {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.street-text {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+
+    margin: 48px 0 20px;
+
+    color: #D5966C;
+}
+
+.main-text-1 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 343px;
+
+    color: #FFFFFF;
+}
+
+.main-text-2 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+/************************ footer **********************/
+
+.footer {
+    padding: 48px 32px;
+
+    background-color: #D5966C;
+}
+
+.footer-text {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+
+    margin: 38px 0;
+
+    color: #151515;
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+
+    fill: #151515;
+}
+
+.facebook:hover {
+    fill: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.instagram:hover {
+    fill: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.twitter:hover {
+    fill: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+/************************** respons *************************/
+
+
+@media(min-width:768px) {
+
+    .header-mobile_img {
+        display: none;
+    }
+
+    .header-tablet_img {
+        display: block;
+    }
+
+    .home-button {
+        margin-left: 40px;
+    }
+
+    .main {
+        display: flex;
+        padding: 88px 40px;
+    }
+
+    .street-text {
+        margin: 0 0 20px;
+    }
+
+    .main-text_container {
+        margin-left: 34px;
+    }
+
+    .main-text-2 {
+        width: 100%;
+        max-width: 398px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 56px 40px;
+    }
+
+    .footer-text {
+        max-width: 281px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(min-width:1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-tablet_img {
+        display: none;
+    }
+
+    .heder-desktop_img {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .home-button {
+        margin-left: 156px;
+    }
+
+    .main {
+        padding: 104px 165px 128px;
+        justify-content: space-between;
+    }
+
+    .main-title {
+        font-size: 70px;
+        line-height: 70px;
+
+        width: 362px;
+    }
+
+    .street-text {
+        font-size: 36px;
+        line-height: 36px;
+
+        margin: 0 0 24px;
+    }
+
+    .main-text-1 {
+        font-size: 22px;
+        line-height: 32px;
+
+        margin-bottom: 32px;
+    }
+
+    .main-text-2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .footer{
+        padding: 80px 165px;
+    }
+
+    .footer-text{
+        max-width: 389px;
+    }
+}
